@@ -177,7 +177,7 @@ int NordSecurity::mostrarMenuInteractivo(const std::string opciones[], int n, in
         if (teclaPresionada == 13) return opcionSeleccionada;  // Enter selecciona la opción
     }
 }
-
+void menuCola();
 
 // Muestra el menú principal
 int NordSecurity::Menu() {
@@ -205,7 +205,7 @@ int NordSecurity::Menu() {
         std::cout << "\n";
         menuseguridadfisica();
         break;
-    case 1: std::cout << "Has elegido Seguridad en el Transporte de Valores.\n"; break;
+    case 1: std::cout << menuCola(); break;
     case 2: std::cout << "Has elegido Protección de Personas (VIP).\n"; break;
     case 3: std::cout << "Has elegido Monitoreo de Alarmas y Respuesta Rápida.\n"; break;
     case 4: std::cout << "Has elegido Servicios de Vigilancia y Seguridad en Eventos.\n"; break;
